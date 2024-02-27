@@ -14,8 +14,9 @@ pipeline
 			{
 			steps
 				{
-					sh "java Demo.java"
-					sh "python3 main.py"
+					bat "javac Demo.java"
+					bat "java Demo.java"
+					bat "python3 main.py"
 						
 				}
 			}
